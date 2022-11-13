@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class=" w-3/4 mx-auto text-center mt-10">
+  <h1 class="text-3xl font-bold ">welcome to your dashboard!!</h1>
+  <main class="mx-auto">
+    <section class="">
+        <div class="grid grid-cols-3 gap-4 text-center">
+            <div id="deposit" class="bg-blue-400 mt-10 p-12 rounded">
+                <h3 class="text-white text-2xl">Deposit</h3>
+                <h2 class="text-white text-4xl">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div id="withdraw" class="bg-green-400 mt-10 p-8 rounded">
+                <h3 class="text-white text-2xl">Withdraw</h3>
+                <h2 class="text-white text-4xl">$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div id="total" class="bg-yellow-400 mt-10 p-8 rounded">
+                <h3 class="text-white text-2xl">Total</h3>
+                <h2 class="text-white text-4xl">$<span id="balance-total">1240</span></h2>
+            </div>
+        </div>
+    </section>
+        
+  </main>
+  <div class="grid grid-cols-2 gap-3 text-left">
+    <div class=" p-10 mt-10 bg-blue-200 rounded">
+      <h3 class="text-bold mb-3">Please Deposit</h3>
+        <input id="user-deposit" class="border-2 bg-blue-100 rounded text-black border-gray-400 mb-5 px-3" type="text" placeholder="$ Enter your Amount"><br>
+        <button id="deposit-btn" class=" bg-blue-400 text-white p-2 rounded ">Deposit</button>
+    </div>
+    <div class=" p-10 mt-10 bg-green-200 rounded">
+      <h3 class="text-bold mb-3">Please Withdraw</h3>
+        <input id="user-withdraw" class="border-2 rounded border-gray-400 mb-5 px-3" type="text" placeholder="$ Enter your Amount"><br>
+        <button id="withdraw-btn" class=" bg-green-400 text-white p-2 rounded ">Withdraw</button>
+    </div>
+  </div>
+  <script src="../js/banking.js"></script>
+</body>
+</html>
